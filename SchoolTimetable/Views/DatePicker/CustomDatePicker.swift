@@ -16,6 +16,7 @@ struct CustomDatePicker: View {
     var interval: DateInterval
     
     let weekdaySymbols: [String] = Calendar.weekdaySymbols(type: .short)
+    let monthsSymbols = ["Январь", "Февраль", "Март", "Апрель", "Май", "Июнь", "Июль", "Август", "Сентябрь", "Октябрь", "Ноябрь", "Декабрь"]
     
     var body: some View {
         VStack(spacing: 20) {
@@ -101,17 +102,8 @@ struct CustomDatePicker: View {
     }
     
     private func extractMonthAndYear() -> MonthAndYear? {
-        let calendar = Calendar.current
-        let dateComponents = DateComponents(calendar: calendar, year: currentYear, month: currentMonth)
-        guard let date = calendar.date(from: dateComponents) else { return nil }
-        
-        let dateFormatter = DateFormatter()
-        dateFormatter.locale = Locale.current
-        dateFormatter.dateFormat = "MMMM YYYY"
-        let dateString = dateFormatter.string(from: date)
-        let array = dateString.components(separatedBy: " ")
-        
-        return .init(month: array[0], year: array[1])
+        guard 1...12 ~= currentMonth else { return nil }
+        return .init(month: monthsSymbols[currentMonth - 1], year: currentYear.description)
     }
     
     private enum Action {
@@ -209,8 +201,8 @@ struct CustomDatePicker: View {
 
 struct CustomDatePicker_Previews: PreviewProvider {
     static var previews: some View {
-        let store = DayStore()
-        CustomDatePicker(selection: .constant(store.today.id), interval: store.interval)
-            .environmentObject(store)
+        let dayStore = DayStore()
+        CustomDatePicker(selection: .constant(dayStore.today.id), interval: dayStore.interval)
+            .environmentObject(dayStore)
     }
 }
