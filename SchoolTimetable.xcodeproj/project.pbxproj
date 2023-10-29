@@ -1,0 +1,588 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		95A704FF2AECD23300722D8C /* DateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A704FE2AECD23300722D8C /* DateView.swift */; };
+		95A705072AECD94800722D8C /* DateSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A705062AECD94800722D8C /* DateSelectionView.swift */; };
+		95A7050B2AED079500722D8C /* CustomDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7050A2AED079500722D8C /* CustomDatePicker.swift */; };
+		95A7050E2AEE39B400722D8C /* TimetableStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7050D2AEE39B400722D8C /* TimetableStore.swift */; };
+		95A705102AEE3CD200722D8C /* Cache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7050F2AEE3CD200722D8C /* Cache.swift */; };
+		95A705122AEE420D00722D8C /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A705112AEE420D00722D8C /* Coordinator.swift */; };
+		95A705142AEEA22400722D8C /* Priority.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A705132AEEA22400722D8C /* Priority.swift */; };
+		95A705162AEEA6D100722D8C /* Lorem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A705152AEEA6D100722D8C /* Lorem.swift */; };
+		95A7051D2AEEB13C00722D8C /* LessonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95A7051C2AEEB13C00722D8C /* LessonView.swift */; };
+		95D4352A2AE7F0D900806565 /* SchoolTimetableApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D435292AE7F0D900806565 /* SchoolTimetableApp.swift */; };
+		95D4352C2AE7F0D900806565 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D4352B2AE7F0D900806565 /* ContentView.swift */; };
+		95D4352E2AE7F0DB00806565 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D4352D2AE7F0DB00806565 /* Assets.xcassets */; };
+		95D435312AE7F0DB00806565 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 95D435302AE7F0DB00806565 /* Preview Assets.xcassets */; };
+		95D4353F2AE815F500806565 /* Lesson.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D4353E2AE815F500806565 /* Lesson.swift */; };
+		95D435412AE8164400806565 /* Timetable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D435402AE8164400806565 /* Timetable.swift */; };
+		95D435452AE816B300806565 /* DayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D435442AE816B300806565 /* DayView.swift */; };
+		95D435472AE817B000806565 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D435462AE817B000806565 /* TimetableView.swift */; };
+		95D435492AE817EE00806565 /* TimetableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95D435482AE817EE00806565 /* TimetableViewModel.swift */; };
+		95E022552AE942C100772BF1 /* Day.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E022542AE942C100772BF1 /* Day.swift */; };
+		95E0225D2AE98A2C00772BF1 /* CalendarLineViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0225C2AE98A2C00772BF1 /* CalendarLineViewModel.swift */; };
+		95E022602AE99CDA00772BF1 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0225F2AE99CDA00772BF1 /* DateExtensions.swift */; };
+		95E022622AE99D8500772BF1 /* CalendarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E022612AE99D8500772BF1 /* CalendarExtension.swift */; };
+		95E022642AEA453E00772BF1 /* ArrayDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E022632AEA453E00772BF1 /* ArrayDay.swift */; };
+		95E022672AEA4FE600772BF1 /* DayStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E022662AEA4FE600772BF1 /* DayStore.swift */; };
+		95E0226C2AEA6D1F00772BF1 /* DayNumberView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0226B2AEA6D1F00772BF1 /* DayNumberView.swift */; };
+		95E0226E2AEA990A00772BF1 /* TimetableMockBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0226D2AEA990A00772BF1 /* TimetableMockBuilder.swift */; };
+		95E022702AEBC1D300772BF1 /* LessonItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0226F2AEBC1D300772BF1 /* LessonItemView.swift */; };
+		95E022722AEBC24200772BF1 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E022712AEBC24200772BF1 /* Time.swift */; };
+		95E022742AEBC3FD00772BF1 /* TimeIntervalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E022732AEBC3FD00772BF1 /* TimeIntervalView.swift */; };
+		95E022762AEBCA9100772BF1 /* NumberCircleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E022752AEBCA9100772BF1 /* NumberCircleView.swift */; };
+		95E022782AEBCB9600772BF1 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E022772AEBCB9600772BF1 /* DateService.swift */; };
+		95E0227A2AEBD0D200772BF1 /* CalendarLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E022792AEBD0D200772BF1 /* CalendarLineView.swift */; };
+		95E0227C2AEBDAD600772BF1 /* DaysWeekView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0227B2AEBDAD600772BF1 /* DaysWeekView.swift */; };
+		95E0227E2AEBEAE000772BF1 /* CalendarLineControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95E0227D2AEBEAE000772BF1 /* CalendarLineControlView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		95A704FE2AECD23300722D8C /* DateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateView.swift; sourceTree = "<group>"; };
+		95A705062AECD94800722D8C /* DateSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateSelectionView.swift; sourceTree = "<group>"; };
+		95A7050A2AED079500722D8C /* CustomDatePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDatePicker.swift; sourceTree = "<group>"; };
+		95A7050C2AEE315900722D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		95A7050D2AEE39B400722D8C /* TimetableStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableStore.swift; sourceTree = "<group>"; };
+		95A7050F2AEE3CD200722D8C /* Cache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cache.swift; sourceTree = "<group>"; };
+		95A705112AEE420D00722D8C /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		95A705132AEEA22400722D8C /* Priority.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Priority.swift; sourceTree = "<group>"; };
+		95A705152AEEA6D100722D8C /* Lorem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lorem.swift; sourceTree = "<group>"; };
+		95A7051C2AEEB13C00722D8C /* LessonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonView.swift; sourceTree = "<group>"; };
+		95D435262AE7F0D900806565 /* SchoolTimetable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SchoolTimetable.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		95D435292AE7F0D900806565 /* SchoolTimetableApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchoolTimetableApp.swift; sourceTree = "<group>"; };
+		95D4352B2AE7F0D900806565 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		95D4352D2AE7F0DB00806565 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		95D435302AE7F0DB00806565 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		95D4353E2AE815F500806565 /* Lesson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lesson.swift; sourceTree = "<group>"; };
+		95D435402AE8164400806565 /* Timetable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Timetable.swift; sourceTree = "<group>"; };
+		95D435442AE816B300806565 /* DayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayView.swift; sourceTree = "<group>"; };
+		95D435462AE817B000806565 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
+		95D435482AE817EE00806565 /* TimetableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableViewModel.swift; sourceTree = "<group>"; };
+		95E022542AE942C100772BF1 /* Day.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Day.swift; sourceTree = "<group>"; };
+		95E0225C2AE98A2C00772BF1 /* CalendarLineViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarLineViewModel.swift; sourceTree = "<group>"; };
+		95E0225F2AE99CDA00772BF1 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		95E022612AE99D8500772BF1 /* CalendarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarExtension.swift; sourceTree = "<group>"; };
+		95E022632AEA453E00772BF1 /* ArrayDay.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArrayDay.swift; sourceTree = "<group>"; };
+		95E022662AEA4FE600772BF1 /* DayStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayStore.swift; sourceTree = "<group>"; };
+		95E0226B2AEA6D1F00772BF1 /* DayNumberView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayNumberView.swift; sourceTree = "<group>"; };
+		95E0226D2AEA990A00772BF1 /* TimetableMockBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableMockBuilder.swift; sourceTree = "<group>"; };
+		95E0226F2AEBC1D300772BF1 /* LessonItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonItemView.swift; sourceTree = "<group>"; };
+		95E022712AEBC24200772BF1 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		95E022732AEBC3FD00772BF1 /* TimeIntervalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeIntervalView.swift; sourceTree = "<group>"; };
+		95E022752AEBCA9100772BF1 /* NumberCircleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberCircleView.swift; sourceTree = "<group>"; };
+		95E022772AEBCB9600772BF1 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
+		95E022792AEBD0D200772BF1 /* CalendarLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarLineView.swift; sourceTree = "<group>"; };
+		95E0227B2AEBDAD600772BF1 /* DaysWeekView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DaysWeekView.swift; sourceTree = "<group>"; };
+		95E0227D2AEBEAE000772BF1 /* CalendarLineControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarLineControlView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		95D435232AE7F0D900806565 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		95A705002AECD61F00722D8C /* DateView */ = {
+			isa = PBXGroup;
+			children = (
+				95A704FE2AECD23300722D8C /* DateView.swift */,
+			);
+			path = DateView;
+			sourceTree = "<group>";
+		};
+		95A705012AECD62B00722D8C /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				95E0227B2AEBDAD600772BF1 /* DaysWeekView.swift */,
+				95E0226B2AEA6D1F00772BF1 /* DayNumberView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		95A705022AECD66500722D8C /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				95E022752AEBCA9100772BF1 /* NumberCircleView.swift */,
+				95E0226F2AEBC1D300772BF1 /* LessonItemView.swift */,
+				95E022732AEBC3FD00772BF1 /* TimeIntervalView.swift */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		95A705032AECD6CF00722D8C /* CalendarControl */ = {
+			isa = PBXGroup;
+			children = (
+				95E0227D2AEBEAE000772BF1 /* CalendarLineControlView.swift */,
+			);
+			path = CalendarControl;
+			sourceTree = "<group>";
+		};
+		95A7051B2AEEB13000722D8C /* Lesson */ = {
+			isa = PBXGroup;
+			children = (
+				95A7051C2AEEB13C00722D8C /* LessonView.swift */,
+			);
+			path = Lesson;
+			sourceTree = "<group>";
+		};
+		95A7051E2AEEBADF00722D8C /* DatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				95A7050A2AED079500722D8C /* CustomDatePicker.swift */,
+				95A705062AECD94800722D8C /* DateSelectionView.swift */,
+			);
+			path = DatePicker;
+			sourceTree = "<group>";
+		};
+		95D4351D2AE7F0D900806565 = {
+			isa = PBXGroup;
+			children = (
+				95D435282AE7F0D900806565 /* SchoolTimetable */,
+				95D435272AE7F0D900806565 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		95D435272AE7F0D900806565 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				95D435262AE7F0D900806565 /* SchoolTimetable.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		95D435282AE7F0D900806565 /* SchoolTimetable */ = {
+			isa = PBXGroup;
+			children = (
+				95A7050C2AEE315900722D8C /* Info.plist */,
+				95D435292AE7F0D900806565 /* SchoolTimetableApp.swift */,
+				95D4353D2AE815E200806565 /* Model */,
+				95E022682AEA687400772BF1 /* Navigation */,
+				95E022592AE98A0400772BF1 /* Views */,
+				95E022652AEA474400772BF1 /* Services */,
+				95E022692AEA68DB00772BF1 /* Support */,
+				95E0226A2AEA68FA00772BF1 /* Resources */,
+				95D4352D2AE7F0DB00806565 /* Assets.xcassets */,
+				95D4352F2AE7F0DB00806565 /* Preview Content */,
+			);
+			path = SchoolTimetable;
+			sourceTree = "<group>";
+		};
+		95D4352F2AE7F0DB00806565 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				95D435302AE7F0DB00806565 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		95D4353D2AE815E200806565 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				95E022662AEA4FE600772BF1 /* DayStore.swift */,
+				95A7050D2AEE39B400722D8C /* TimetableStore.swift */,
+				95A7050F2AEE3CD200722D8C /* Cache.swift */,
+				95D4353E2AE815F500806565 /* Lesson.swift */,
+				95A705132AEEA22400722D8C /* Priority.swift */,
+				95E022712AEBC24200772BF1 /* Time.swift */,
+				95D435402AE8164400806565 /* Timetable.swift */,
+				95E022542AE942C100772BF1 /* Day.swift */,
+				95E022632AEA453E00772BF1 /* ArrayDay.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		95E022592AE98A0400772BF1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				95D435442AE816B300806565 /* DayView.swift */,
+				95A7051E2AEEBADF00722D8C /* DatePicker */,
+				95A705032AECD6CF00722D8C /* CalendarControl */,
+				95A705002AECD61F00722D8C /* DateView */,
+				95E0225B2AE98A1300772BF1 /* CalendarLine */,
+				95A7051B2AEEB13000722D8C /* Lesson */,
+				95E0225A2AE98A0900772BF1 /* Timetable */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		95E0225A2AE98A0900772BF1 /* Timetable */ = {
+			isa = PBXGroup;
+			children = (
+				95D435462AE817B000806565 /* TimetableView.swift */,
+				95A705022AECD66500722D8C /* Subviews */,
+				95D435482AE817EE00806565 /* TimetableViewModel.swift */,
+			);
+			path = Timetable;
+			sourceTree = "<group>";
+		};
+		95E0225B2AE98A1300772BF1 /* CalendarLine */ = {
+			isa = PBXGroup;
+			children = (
+				95E022792AEBD0D200772BF1 /* CalendarLineView.swift */,
+				95A705012AECD62B00722D8C /* Subviews */,
+				95E0225C2AE98A2C00772BF1 /* CalendarLineViewModel.swift */,
+			);
+			path = CalendarLine;
+			sourceTree = "<group>";
+		};
+		95E0225E2AE99CC700772BF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				95E0225F2AE99CDA00772BF1 /* DateExtensions.swift */,
+				95E022612AE99D8500772BF1 /* CalendarExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		95E022652AEA474400772BF1 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				95E022772AEBCB9600772BF1 /* DateService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		95E022682AEA687400772BF1 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				95A705112AEE420D00722D8C /* Coordinator.swift */,
+				95D4352B2AE7F0D900806565 /* ContentView.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		95E022692AEA68DB00772BF1 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				95E0225E2AE99CC700772BF1 /* Extensions */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		95E0226A2AEA68FA00772BF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				95E0226D2AEA990A00772BF1 /* TimetableMockBuilder.swift */,
+				95A705152AEEA6D100722D8C /* Lorem.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		95D435252AE7F0D900806565 /* SchoolTimetable */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95D435342AE7F0DB00806565 /* Build configuration list for PBXNativeTarget "SchoolTimetable" */;
+			buildPhases = (
+				95D435222AE7F0D900806565 /* Sources */,
+				95D435232AE7F0D900806565 /* Frameworks */,
+				95D435242AE7F0D900806565 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SchoolTimetable;
+			productName = Calendar;
+			productReference = 95D435262AE7F0D900806565 /* SchoolTimetable.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		95D4351E2AE7F0D900806565 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					95D435252AE7F0D900806565 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 95D435212AE7F0D900806565 /* Build configuration list for PBXProject "SchoolTimetable" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 95D4351D2AE7F0D900806565;
+			productRefGroup = 95D435272AE7F0D900806565 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				95D435252AE7F0D900806565 /* SchoolTimetable */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		95D435242AE7F0D900806565 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95D435312AE7F0DB00806565 /* Preview Assets.xcassets in Resources */,
+				95D4352E2AE7F0DB00806565 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		95D435222AE7F0D900806565 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				95A704FF2AECD23300722D8C /* DateView.swift in Sources */,
+				95A705122AEE420D00722D8C /* Coordinator.swift in Sources */,
+				95E022742AEBC3FD00772BF1 /* TimeIntervalView.swift in Sources */,
+				95A705162AEEA6D100722D8C /* Lorem.swift in Sources */,
+				95E0226C2AEA6D1F00772BF1 /* DayNumberView.swift in Sources */,
+				95E022722AEBC24200772BF1 /* Time.swift in Sources */,
+				95E022672AEA4FE600772BF1 /* DayStore.swift in Sources */,
+				95E0225D2AE98A2C00772BF1 /* CalendarLineViewModel.swift in Sources */,
+				95D4353F2AE815F500806565 /* Lesson.swift in Sources */,
+				95D435492AE817EE00806565 /* TimetableViewModel.swift in Sources */,
+				95E022622AE99D8500772BF1 /* CalendarExtension.swift in Sources */,
+				95E022702AEBC1D300772BF1 /* LessonItemView.swift in Sources */,
+				95A705142AEEA22400722D8C /* Priority.swift in Sources */,
+				95A7050E2AEE39B400722D8C /* TimetableStore.swift in Sources */,
+				95E022762AEBCA9100772BF1 /* NumberCircleView.swift in Sources */,
+				95E022642AEA453E00772BF1 /* ArrayDay.swift in Sources */,
+				95D435452AE816B300806565 /* DayView.swift in Sources */,
+				95E0227E2AEBEAE000772BF1 /* CalendarLineControlView.swift in Sources */,
+				95D435472AE817B000806565 /* TimetableView.swift in Sources */,
+				95A705072AECD94800722D8C /* DateSelectionView.swift in Sources */,
+				95E0227C2AEBDAD600772BF1 /* DaysWeekView.swift in Sources */,
+				95A7050B2AED079500722D8C /* CustomDatePicker.swift in Sources */,
+				95E022602AE99CDA00772BF1 /* DateExtensions.swift in Sources */,
+				95E0226E2AEA990A00772BF1 /* TimetableMockBuilder.swift in Sources */,
+				95A7051D2AEEB13C00722D8C /* LessonView.swift in Sources */,
+				95E022782AEBCB9600772BF1 /* DateService.swift in Sources */,
+				95D4352C2AE7F0D900806565 /* ContentView.swift in Sources */,
+				95E0227A2AEBD0D200772BF1 /* CalendarLineView.swift in Sources */,
+				95D4352A2AE7F0D900806565 /* SchoolTimetableApp.swift in Sources */,
+				95E022552AE942C100772BF1 /* Day.swift in Sources */,
+				95D435412AE8164400806565 /* Timetable.swift in Sources */,
+				95A705102AEE3CD200722D8C /* Cache.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		95D435322AE7F0DB00806565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		95D435332AE7F0DB00806565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		95D435352AE7F0DB00806565 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SchoolTimetable/Preview Content\"";
+				DEVELOPMENT_TEAM = TNTX3799P3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolTimetable/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DenisDmitriev.SchoolTimetable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		95D435362AE7F0DB00806565 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SchoolTimetable/Preview Content\"";
+				DEVELOPMENT_TEAM = TNTX3799P3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = SchoolTimetable/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = DenisDmitriev.SchoolTimetable;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		95D435212AE7F0D900806565 /* Build configuration list for PBXProject "SchoolTimetable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95D435322AE7F0DB00806565 /* Debug */,
+				95D435332AE7F0DB00806565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95D435342AE7F0DB00806565 /* Build configuration list for PBXNativeTarget "SchoolTimetable" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				95D435352AE7F0DB00806565 /* Debug */,
+				95D435362AE7F0DB00806565 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 95D4351E2AE7F0D900806565 /* Project object */;
+}
