@@ -1,6 +1,8 @@
 # SchoolTimetable
 Example of an application with a school schedule
 
+![Overview](https://github.com/DenDmitriev/SchoolTimetable/assets/65191747/087f774e-5623-42d9-b21b-c1fa27d3ad21)
+
 # Overview
 
 https://github.com/DenDmitriev/SchoolTimetable/assets/65191747/510add0d-8794-4da0-a16a-7050a03f9e02
